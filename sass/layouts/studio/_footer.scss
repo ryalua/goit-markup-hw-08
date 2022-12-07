@@ -1,0 +1,192 @@
+.bcg-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--hero-footer-bcg);
+}
+.footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.footer__aside-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: var(--button-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    .footer__logo-web {
+        color: var(--accent-color);
+    }
+}
+.footer__aside-text {
+    margin-bottom: 9px;
+
+    color: var(--button-text-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.footer__aside-com:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__aside-link {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    color: var(--com-footer-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function-hover);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+
+/* ------ Soc net --------*/
+.footer__soc-footer {
+    margin-left: 70px;
+}
+
+.footer__soc-title {
+    margin-bottom: 20px;
+    color: var(--button-text-color);
+    text-transform: uppercase;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+}
+
+.footer__soc-list {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.footer__soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer__soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--button-text-color);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function-hover);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.footer__soc-icon {
+    fill: currentColor;
+}
+
+
+
+/* .footer-soc-link:hover .staff-soc-icon,
+.footer-soc-link:focus .staff-soc-icon {
+    fill: var(--button-text-color);
+} */
+
+
+/*-------- Form Subscribe ------------*/
+.footer__form-footer {
+    position: relative;
+    margin-left: auto;
+}
+.footer__form-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--button-text-color);
+}
+.footer__form-fild {
+    display: flex;
+    align-items: flex-end;
+
+    margin-left: auto;
+}
+.footer__form-input {
+    width: 358px;
+    height: 50px;
+
+    margin-top: 20px;
+    padding-left: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: #FFFFFF;
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+.footer__form-btn {
+    display: flex;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-left: 28px;
+    padding-bottom: 10px;
+    padding-right: 28px;
+
+    background-color: var(--accent-color);
+    vertical-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+    color: var(--button-text-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function-hover);
+    &:hover,
+    &:focus {
+        background-color: var(--button-hero-hover);
+    }
+}
+.footer__form-icon {
+    margin-left: 10px;
+}
+
