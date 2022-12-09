@@ -1,11 +1,15 @@
-.section-features {
-    padding-top: 94px;
+.features {
+    padding-top: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+
+    }
 }
 
-.features {
-    display: flex;
-    gap: 30px;
-    & .title {
+.features__list {
+    // display: flex;
+    // gap: 30px;
+    & .features__title {
         margin-bottom: 10px;
 
         color: var(--title-text-color);
@@ -13,52 +17,77 @@
         font-size: 14px;
         line-height: 1, 14;
         text-transform: uppercase;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
     }
-    & .text {
+    & .features__text {
         color: var(--primery-text-color);
         font-size: 14px;
         line-height: 1.71;
+
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+        // max-width: calc((100% - 30px)/2);
     }
 }
-
-.feature-item {
-    flex-basis: calc((100% - 90px)/4);
+.features__item {
+    // flex-basis: calc((100% - 90px)/4);
+    padding-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px)/2);
+        padding-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px)/4);
+       
+    }
 }
+// .link .text {
+//     color: var(--primery-text-color);
+//     font-size: 14px;
+//     font-size: 16px;
+//     line-height: 1.88;
+// }
 
+.features__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    // height: auto;
+    width: 100%;
 
-
-
-.link .text {
-    color: var(--primery-text-color);
-    font-size: 14px;
-    font-size: 16px;
-    line-height: 1.88;
-}
-
-.icon-features {
     margin-bottom: 30px;
-    padding-top: 25px;
-    padding-right: 100px;
-    padding-bottom: 25px;
-    padding-left: 100px;
+    // padding-top: 25px;
+    // padding-right: 100px;
+    // padding-bottom: 25px;
+    // padding-left: 100px;
 
     height: 120px;
     background-color: var(--button-white-bcg);
 }
 
-.icon-antenna {
+.features__icon-antenna {
     fill: currentColor;
 }
 
-.icon-clock {
+.features__icon-clock {
     fill: currentColor;
 }
 
-.icon-diagram {
+.features__icon-diagram {
     fill: currentColor;
 }
 
-.icon-astronaut {
+.features__icon-astronaut {
     fill: currentColor;
 }
