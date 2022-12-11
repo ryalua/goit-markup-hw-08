@@ -11,22 +11,38 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bcg_Img.jpg);
+    url(../../images/bcg_img_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     align-items: center;
     text-align: center;
+    @include tablet {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../../..//images/bcg_img_tablet.jpg);
+    }
+    @include desktop {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../../../images/bcg_img_desktop.jpg);
+    }
 }
 .hero-title {
     margin-bottom: 30px;
 
     color:var(--button-text-color) ;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @include desktop {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 .hero .button-hero {
     padding: 10px 32px;

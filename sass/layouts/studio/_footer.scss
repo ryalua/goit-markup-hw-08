@@ -6,11 +6,30 @@
 }
 .footer {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction: column;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+        }
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+.footer__aside-footer {
+    margin-bottom: 60px;
+    @include desktop {
+        margin-bottom: 60px;
+    }
 }
 .footer__aside-logo {
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
 
     color: var(--button-text-color);
@@ -19,8 +38,13 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    text-align: center;
     .footer__logo-web {
         color: var(--accent-color);
+    }
+    @include desktop {
+        display: inline-block;
+        text-align: left;
     }
 }
 .footer__aside-text {
@@ -30,12 +54,17 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    text-align: center;
+    @include desktop {
+        text-align: left;
+    }
 }
 .footer__aside-com:not(:last-child) {
     margin-bottom: 9px;
 }
 
 .footer__aside-link {
+    display: block;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -44,6 +73,7 @@
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+    text-align: center;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -52,13 +82,21 @@
     &:focus {
         color: var(--accent-color);
     }
+    @include desktop {
+        display: inline-block;
+        text-align: left;
+   }
 }
 
 
 
 /* ------ Soc net --------*/
 .footer__soc-footer {
-    margin-left: 70px;
+    margin-left: 0;
+    margin-bottom: 60px;
+    @include desktop {
+        margin-left: 70px;
+    }
 }
 
 .footer__soc-title {
@@ -70,13 +108,19 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-
+    text-align: center;
+    @include desktop {
+        text-align: left;
+    }
 }
 
 .footer__soc-list {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     gap: 10px;
+    @include desktop {
+        justify-content: left;
+    }
 }
 
 .footer__soc-item {
@@ -119,7 +163,10 @@
 /*-------- Form Subscribe ------------*/
 .footer__form-footer {
     position: relative;
-    margin-left: auto;
+    margin-left: 0;
+    @include desktop {
+        margin-left: auto;
+    }
 }
 .footer__form-label {
     font-weight: 700;
@@ -127,20 +174,31 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 
     color: var(--button-text-color);
+    @include desktop {
+        text-align: left;
+    }
 }
 .footer__form-fild {
     display: flex;
-    align-items: flex-end;
-
-    margin-left: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-left: auto;
+    }
 }
 .footer__form-input {
     width: 358px;
     height: 50px;
 
     margin-top: 20px;
+    margin-bottom: 20px;
     padding-left: 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -150,6 +208,9 @@
     color: #FFFFFF;
     &::placeholder {
         color: rgba(255, 255, 255, 0.6);
+    }
+    @include desktop {
+        margin-bottom: 0;
     }
 }
 .footer__form-btn {
