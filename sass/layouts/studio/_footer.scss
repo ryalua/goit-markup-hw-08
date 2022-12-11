@@ -7,14 +7,14 @@
 .footer {
     display: flex;
     flex-direction: column;
-    @include tablet {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
         justify-content: space-around;
-        }
-    @include desktop {
+    }
+    @media screen and (min-width: 1200px) {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -24,7 +24,7 @@
 }
 .footer__aside-footer {
     margin-bottom: 60px;
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 60px;
     }
 }
@@ -42,7 +42,7 @@
     .footer__logo-web {
         color: var(--accent-color);
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         display: inline-block;
         text-align: left;
     }
@@ -55,7 +55,7 @@
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         text-align: left;
     }
 }
@@ -82,7 +82,7 @@
     &:focus {
         color: var(--accent-color);
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         display: inline-block;
         text-align: left;
    }
@@ -94,7 +94,7 @@
 .footer__soc-footer {
     margin-left: 0;
     margin-bottom: 60px;
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         margin-left: 70px;
     }
 }
@@ -109,7 +109,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-align: center;
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         text-align: left;
     }
 }
@@ -118,7 +118,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         justify-content: left;
     }
 }
@@ -164,7 +164,7 @@
 .footer__form-footer {
     position: relative;
     margin-left: 0;
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         margin-left: auto;
     }
 }
@@ -177,7 +177,7 @@
     text-align: center;
 
     color: var(--button-text-color);
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         text-align: left;
     }
 }
@@ -186,7 +186,7 @@
     flex-direction: column;
     align-items: center;
     margin-left: 0;
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
@@ -209,7 +209,7 @@
     &::placeholder {
         color: rgba(255, 255, 255, 0.6);
     }
-    @include desktop {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 0;
     }
 }

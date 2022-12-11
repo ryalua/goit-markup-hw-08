@@ -128,7 +128,21 @@
           <h2 class="staff__section-title">Наша команда</h2>
           <ul class="staff__list list">
             <li class="staff__item">
-              <img src="./images/img.jpg" alt="хлопець в темній сорочці" width="270">
+              <picture>
+                <source 
+                  srcset="./images/img(0)_dsk.jpg 1x, ./images/img(0)_dsk_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                >
+                <source 
+                  srcset="./images/img(0)_tab.jpg 1x, ./images/img(0)_tab_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                >
+                <source 
+                  srcset="./images/img(0)_mob.jpg 1x, ./images/img(0)_mob_2x.jpg 2x"
+                  media="(max-width: 767px)"
+                >
+                <img src="./images/img(0).jpg" alt="хлопець в темній сорочці" width="450">
+              </picture>
               <div class="staff__border">
                 <h3 class="staff__title">Ігор Дем'яненко</h3>
                 <p class="staff__text" lang="en">Product Designer</p>
@@ -165,7 +179,21 @@
               </div>
             </li>
             <li class="staff__item">
-              <img src="./images/img(1).jpg" alt="дивчина" width="270">
+              <picture>
+                <source 
+                  srcset="./images/img(1)_dsk.jpg 1x, ./images/img(1)_dsk_2x.jpg 2x" 
+                  media="(min-width: 1200px)"
+                >
+                <source 
+                  srcset="./images/img(1)_tab.jpg 1x, ./images/img(1)_tab_2x.jpg 2x" 
+                  media="(min-width: 768px)"
+                >
+                <source 
+                  srcset="./images/img(1)_mob.jpg 1x, ./images/img(1)_mob_2x.jpg 2x" 
+                  media="(max-width: 767px)"
+                >
+                <img src="./images/img(1).jpg" alt="дивчина" width="450">
+              </picture>
               <div class="staff__border">
                 <h3 class="staff__title">Ольга Рєпіна</h3>
                 <p class="staff__text" lang="en">Frontend Developer</p>
@@ -202,7 +230,12 @@
               </div>
             </li>
             <li class="staff__item">
-              <img src="./images/img(2).jpg" alt="хлопець у світлій сорочці" width="270">
+              <picture>
+                <source srcset="./images/img(2)_dsk.jpg 1x, ./images/img(2)_dsk_2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/img(2)_tab.jpg 1x, ./images/img(2)_tab_2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/img(2)_mob.jpg 1x, ./images/img(2)_mob_2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/img(2).jpg" alt="хлопець у світлій сорочці" width="450">
+              </picture>
               <div class="staff__border">
                 <h3 class="staff__title">Микола Тарасов</h3>
                 <p class="staff__text" lang="en">Marketing</p>
@@ -239,7 +272,12 @@
               </div>
             </li>
             <li class="staff__item">
-              <img src="./images/img(3).jpg" alt="хлопець в чорній футболці" width="270">
+              <picture>
+                <source srcset="./images/img(3)_dsk.jpg 1x, ./images/img(3)_dsk_2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/img(3)_tab.jpg 1x, ./images/img(3)_tab_2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/img(3)_mob.jpg 1x, ./images/img(3)_mob_2x.jpg 2x" media="(max-width: 767px)">
+                <img src="./images/img(3).jpg" alt="хлопець в чорній футболці" width="450">
+              </picture>
               <div class="staff__border">
                 <h3 class="staff__title">Михайло Єрмаков</h3>
                 <p class="staff__text" lang="en">UI Designer</p>
@@ -332,7 +370,7 @@
       </section>
     </main>
     <!--Модальне вікно-->
-    <!-- <div class="backdrop is-hidden"  data-modal>
+    <div class="backdrop is-hidden"  data-modal>
       <div class="modal">
         <button class="modal-close" type="button"  data-modal-close>
           <svg class="close-icon" width="11" height="11">
@@ -380,9 +418,9 @@
               id="user-text"
               placeholder="Введіть текст" 
             ></textarea>
-          </div> -->
+          </div>
           <!-------------Кастомний чекбокс--------------->
-          <!-- <label class="check-label">
+          <label class="check-label">
             <input class="check-input" type="checkbox">
             
             <span class="check-box">
@@ -397,7 +435,7 @@
         </form>
 
       </div>
-    </div> -->
+    </div>
     <!--Футер-->
     <footer class="bcg-footer">
       <div class="container footer">
