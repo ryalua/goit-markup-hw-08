@@ -9,7 +9,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4));;
     background-image: var(--grad),
-    url(../../../images/bcg_img_mobile.jpg);
+    url(../images/bcg_img_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,34 +23,34 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url(../../../images/bcg_img_mobile_2x.jpg);
+            url(../images/bcg_img_mobile_2x.jpg);
         }
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../../..//images/bcg_img_tablet.jpg);
+        url(../images/bcg_img_tablet.jpg);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../../images/bcg_img_tablet_2x.jpg);
+                url(../images/bcg_img_tablet_2x.jpg);
             }
     }
     @media screen and (min-width: 1200px) {
         background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../../../images/bcg_img_desktop.jpg);
+        url(../images/bcg_img_desktop.jpg);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../../images/bcg_img_desktop_2x.jpg);
+                url(../images/bcg_img_desktop_2x.jpg);
             }
     }
 }
