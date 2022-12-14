@@ -14,7 +14,7 @@
 
   <body>
     <!--Шапка сайту-->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container header">
         <nav class="header__nav-site">
           <a href="#" lang="en" class="header__logo">
@@ -44,8 +44,68 @@
             </a>
           </li>
         </ul>
+        <!--------  Мобільне меню  ----------->
+        <button class="menu-open js-open-menu" type="button">
+          <svg class="open-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu  js-menu-container">
+        <div class="container wrap-menu">
+          <div class="mob-menu__up">
+            <button class="mob-menu__close js-close-menu" type="button">
+              <svg class="close-icon" width="19" height="19">
+                <use href="./images/icons.svg#icon-close_24px"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__nav  list">
+              <li class="mob-menu__nav-item"><a href="./index.html" class="mob-menu__nav-link link">Студія</a></li>
+              <li class="mob-menu__nav-item"><a href="./portfolio.html" class="mob-menu__nav-link link">Портфоліо</a></li>
+              <li class="mob-menu__nav-item"><a href="#" class="mob-menu__nav-link link">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="mob-menu__down">
+            <ul class="mob-menu__com list">
+              <li class="mob-menu__com-item">
+                <a href="tel:+380961111111" class="mob-menu__phone link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-menu__com-item">
+                <a href="mailto:info@devstudio.com" class="mob-menu__mail link">
+                  info@devstudio.com
+                </a>
+          
+              </li>
+            </ul>
+            <ul class="mob-menu__soc list">
+              <li class="mob-menu__soc-item">
+                <a href="#" class="mob-menu__soc-link link">
+                  Instagram
+                </a>
+              </li>
+              <li class="mob-menu__soc-item">
+                <a href="#" class="mob-menu__soc-link link">
+                  Twitter
+                </a>
+              </li>
+              <li class="mob-menu__soc-item">
+                <a href="#" class="mob-menu__soc-link link">
+                  Facebook
+                </a>
+              </li>
+              <li class="mob-menu__soc-item">
+                <a href="#" class="mob-menu__soc-link link">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <!--Герой-->
@@ -525,6 +585,8 @@
     </footer>
     <!--Підключення js-скрипта-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/menutwo.js"></script> -->
   </body>
 </html>
 
