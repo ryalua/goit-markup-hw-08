@@ -1,13 +1,18 @@
-.filters {
+.filter {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.button {
+.filter__button {
     border: 0;
 
     padding: 6px 22px;
@@ -33,6 +38,5 @@
             0 1px 2px 0 rgba(0, 0, 0, 0.08),
             0 2px 2px 0 rgba(0, 0, 0, 0.12);
     }
-
 }
 

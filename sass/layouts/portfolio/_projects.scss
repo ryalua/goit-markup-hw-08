@@ -1,21 +1,38 @@
-.projects {
+.project {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    // flex-wrap: wrap;
     gap: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
-.projects .link {
-    padding-top: 0;
-    padding-bottom: 0;
-    text-decoration: none;
-}
+// .projects .link {
+//     padding-top: 0;
+//     padding-bottom: 0;
+//     text-decoration: none;
+// }
 
-.project-item {
+.project__item {
     flex-basis: calc((100% - 60px)/3);
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px)/2);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 60px)/3);
+    }
 }
 
-.project-link {
-    display: block;
+.project__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    // display: block;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -29,12 +46,12 @@
 
 
 
-.project-overlay {
+.project__overlay {
     position: relative;
     overflow: hidden;
 }
 
-.project-text {
+.project__desc {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,22 +76,29 @@
 
     transition: transform 250ms var(--timing-function-hover),
         opacity 250ms var(--timing-function-hover);
-    .project-link:hover &,
-    .project-link:focus & {
+    .project__link:hover &,
+    .project__link:focus & {
         opacity: 1;
         transform: translateY(0);
         }
 }
 
-.section-title {
+.project__title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
+.project__border {
+    padding: 20px 24px;
+    flex-grow: 1;
 
-.link .section-title {
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+}
+.link .project__title {
     margin-bottom: 4px;
 
     color: var(--title-text-color);
@@ -84,13 +108,14 @@
     letter-spacing: 0.06em;
     text-align: left;
 }
+.project__text {
+font-weight: 400;
+font-size: 16px;
+line-height: calc(30 / 16);
+letter-spacing: 0.03em;
 
-.project-border {
-    padding: 20px 24px;
-
-
-    border-right: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    border-left: 1px solid var(--border-color);
+color: #757575;
 }
+
+
 
